@@ -53,7 +53,7 @@ const allProperties = [
 
 export default function PropertiesPage() {
   return (
-    <main className="bg-dark min-h-screen pt-36 md:pt-40">
+    <main className="bg-dark min-h-screen pt-48 md:pt-44">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -64,7 +64,7 @@ export default function PropertiesPage() {
           <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-3 md:mb-4">
             محفظتنا
           </span>
-          <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-serif text-light leading-[1.2]">
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-light leading-[1.3]">
             عقارات
             <br />
             <span className="gold-gradient">حصرية</span>
