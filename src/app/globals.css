@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #C9A84C;
+  --color-gold-light: #E8D48B;
+  --color-gold-dark: #A8882E;
+  --color-charcoal: #1A1A1A;
+  --color-dark: #0D0D0D;
+  --color-light: #F8F6F3;
+  --color-luxury: #2C2C2C;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: #0D0D0D;
+  color: #F8F6F3;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+::selection {
+  background: rgba(201, 168, 76, 0.3);
+  color: #F8F6F3;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A84C;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E8D48B;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #C9A84C 0%, #E8D48B 50%, #A8882E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.luxury-shadow {
+  box-shadow: 0 4px 60px rgba(201, 168, 76, 0.08), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.gold-border {
+  border-color: rgba(201, 168, 76, 0.3);
+}
+
+.hover-gold {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.hover-gold:hover {
+  border-color: rgba(201, 168, 76, 0.6);
+  box-shadow: 0 8px 40px rgba(201, 168, 76, 0.12);
+}
+
+.section-padding {
+  padding: 120px 24px;
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 140px 48px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 160px 80px;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate-border {
+  to { --angle: 360deg; }
+}
+
+.animated-border {
+  position: relative;
+}
+.animated-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: conic-gradient(from var(--angle), transparent, #C9A84C, transparent, #C9A84C, transparent);
+  border-radius: inherit;
+  z-index: -1;
+  animation: rotate-border 4s linear infinite;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor {
+    display: none !important;
+  }
+}
