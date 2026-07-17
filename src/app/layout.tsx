@@ -94,7 +94,7 @@ export default function RootLayout({
         <Preloader />
         <CustomCursor />
         <Navbar />
-        <main>{children}</main>
+        {children}
         <Footer />
         <BackToTop />
       </body>

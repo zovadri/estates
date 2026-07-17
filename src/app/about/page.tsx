@@ -12,18 +12,18 @@ const stats = [
 
 export default function AboutPage() {
   return (
-    <main className="bg-dark min-h-screen pt-48 md:pt-44">
+    <section className="bg-dark min-h-screen pt-32 md:pt-36">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="mb-16 md:mb-20"
+          className="mb-12 md:mb-16"
         >
-          <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-3 md:mb-4">
+          <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-2 md:mb-3">
             عن الشركة
           </span>
-          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-light leading-[1.3] max-w-3xl">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-serif text-light leading-[1.3] max-w-3xl">
             نعيد تعريف العقارات الفاخرة{" "}
             <span className="gold-gradient">لعصر جديد</span>
           </h1>
@@ -98,6 +98,6 @@ export default function AboutPage() {
           </Link>
         </motion.div>
       </div>
-    </main>
+    </section>
   );
 }
