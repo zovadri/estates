@@ -56,21 +56,21 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <main className="bg-dark min-h-screen pt-32">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="mb-16"
-        >
-          <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-4">
-            رؤى وأفكار
-          </span>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif text-light leading-[1.1]">
-            مدونة{" "}
-            <span className="gold-gradient">ZOVADRI</span>
-          </h1>
+      <main className="bg-dark min-h-screen pt-36 md:pt-40">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="mb-12 md:mb-16"
+          >
+            <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-3 md:mb-4">
+              رؤى وأفكار
+            </span>
+            <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-serif text-light leading-[1.2]">
+              مدونة{" "}
+              <span className="gold-gradient">ZOVADRI</span>
+            </h1>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 pb-24">
