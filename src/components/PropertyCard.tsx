@@ -75,9 +75,9 @@ export default function PropertyCard({
             </div>
           </div>
 
-          <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-x-4 group-hover:translate-x-0">
+          <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
             <div className="w-10 h-10 glass-dark flex items-center justify-center">
-              <span className="text-gold text-lg font-serif">→</span>
+              <span className="text-gold text-lg font-serif">←</span>
             </div>
           </div>
         </div>

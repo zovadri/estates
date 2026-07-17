@@ -59,7 +59,7 @@ export default function LatestProjects() {
             className="group inline-flex items-center gap-2 text-xs tracking-[0.25em] uppercase text-light/40 hover:text-gold transition-colors duration-300"
           >
             عرض الكل
-            <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+            <span className="group-hover:-translate-x-1 transition-transform duration-300">←</span>
           </Link>
         </motion.div>
 

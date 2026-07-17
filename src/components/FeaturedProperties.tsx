@@ -53,7 +53,7 @@ const properties = [
   },
   {
     id: "apartment-nyc",
-    title: "سنتral بارك سويت",
+    title: "سنترال بارك سويت",
     location: "نيويورك، الولايات المتحدة",
     price: "6,200,000 $",
     beds: 3,
