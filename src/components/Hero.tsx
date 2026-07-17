@@ -40,13 +40,13 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent" />
       </div>
 
-      <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-20 max-w-[1440px] mx-auto">
+      <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-20 max-w-[1440px] mx-auto pt-24 md:pt-0">
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <span className="inline-block text-[10px] md:text-xs tracking-[0.4em] text-gold/80 uppercase mb-6">
+          <span className="inline-block text-[10px] md:text-xs tracking-[0.4em] text-gold/80 uppercase mb-4 md:mb-6">
             ZOVADRI Estates
           </span>
         </motion.div>
@@ -55,7 +55,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif text-light leading-[0.95] max-w-4xl"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-serif text-light leading-[0.95] max-w-4xl"
         >
           حياة فاخرة
           <br />

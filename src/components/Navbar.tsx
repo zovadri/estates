@@ -73,10 +73,10 @@ export default function Navbar() {
 
           <button
             onClick={() => setMobileOpen(true)}
-            className="lg:hidden text-light/80 hover:text-gold transition-colors"
+            className="lg:hidden w-12 h-12 flex items-center justify-center text-light/80 hover:text-gold transition-all duration-300 hover:scale-110 active:scale-90"
             aria-label="فتح القائمة"
           >
-            <HiMenu size={28} />
+            <HiMenu size={32} />
           </button>
         </div>
       </motion.nav>

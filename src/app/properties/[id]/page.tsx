@@ -294,8 +294,72 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
           </div>
         </div>
 
-        <div className="glass p-8 md:p-12 mb-24 text-center"
-        >
+        <div className="mb-12">
+          <h3 className="text-sm tracking-[0.2em] uppercase text-gold/60 mb-8">
+            جولة افتراضية
+          </h3>
+          <div className="relative h-[300px] md:h-[400px] overflow-hidden group cursor-pointer">
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${property.gallery[0]})` }}
+            />
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center group-hover:bg-black/40 transition-colors duration-500">
+              <div className="text-center">
+                <div className="w-20 h-20 rounded-full border-2 border-gold/60 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500">
+                  <span className="text-3xl text-gold">▶</span>
+                </div>
+                <p className="text-sm text-light/70">شاهد الجولة الافتراضية</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="glass p-8">
+            <h3 className="text-sm tracking-[0.2em] uppercase text-gold/60 mb-6">
+              الموقع
+            </h3>
+            <div className="h-[250px] bg-cover bg-center grayscale"
+              style={{ backgroundImage: "url(https://images.unsplash.com/photo-1569336415962-a4bd9f18cdb3?w=900&q=85)" }}
+            />
+            <div className="flex items-center gap-2 mt-4">
+              <HiLocationMarker className="text-gold/60" size={16} />
+              <span className="text-sm text-light/50">{property.location}</span>
+            </div>
+          </div>
+          <div className="glass p-8">
+            <h3 className="text-sm tracking-[0.2em] uppercase text-gold/60 mb-6">
+              مخطط الطوابق
+            </h3>
+            <div className="flex items-center justify-center h-[250px] border border-white/5">
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-4 border border-gold/20 flex items-center justify-center">
+                  <BiExpand size={28} className="text-gold/40" />
+                </div>
+                <p className="text-xs text-light/30">مخطط الطابق متوفر عند الطلب</p>
+                <button className="mt-4 px-6 py-2 border border-gold/30 text-gold text-[10px] tracking-[0.2em] uppercase hover:bg-gold hover:text-dark transition-all duration-500">
+                  طلب المخطط
+                </button>
+              </div>
+            </div>
+            <div className="grid grid-cols-3 gap-4 mt-4 text-center">
+              <div>
+                <p className="text-lg font-serif text-gold">{property.beds}</p>
+                <p className="text-[10px] text-light/30 uppercase">غرف نوم</p>
+              </div>
+              <div>
+                <p className="text-lg font-serif text-gold">{property.baths}</p>
+                <p className="text-[10px] text-light/30 uppercase">حمامات</p>
+              </div>
+              <div>
+                <p className="text-lg font-serif text-gold">{property.area}</p>
+                <p className="text-[10px] text-light/30 uppercase">المساحة</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="glass p-8 md:p-12 mb-24 text-center">
           <h3 className="text-xl md:text-2xl font-serif text-light mb-4">
             هل أنت مهتم بهذا العقار؟
           </h3>

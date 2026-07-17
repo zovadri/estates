@@ -10,13 +10,6 @@ const stats = [
   { value: "98%", label: "رضا العملاء" },
 ];
 
-const team = [
-  { role: "المؤسس والرئيس التنفيذي" },
-  { role: "رئيس قسم العقارات الفاخرة" },
-  { role: "مدير المحفظة العالمية" },
-  { role: "رئيس خدمة الكونسيرج" },
-];
-
 export default function AboutPage() {
   return (
     <main className="bg-dark min-h-screen pt-32">
@@ -85,34 +78,7 @@ export default function AboutPage() {
           ))}
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-24"
-        >
-          <h2 className="text-2xl md:text-3xl font-serif text-light mb-12 text-center">
-            فريق القيادة
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {team.map((member, i) => (
-              <motion.div
-                key={member.role}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="text-center group"
-              >
-                <div className="w-full aspect-[3/4] bg-cover bg-center mb-4 grayscale"
-                  style={{ backgroundImage: "url(https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=85&blur=80)" }}
-                />
-                <p className="text-sm font-serif text-light">{member.role}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { HiArrowUp } from "react-icons/hi";
+import { HiArrowUp, HiMail, HiPhone, HiLocationMarker } from "react-icons/hi";
 import { FiInstagram, FiLinkedin, FiTwitter, FiYoutube } from "react-icons/fi";
 
 const footerLinks = {
@@ -29,7 +29,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-dark border-t border-white/5">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 pt-16 md:pt-24 pb-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 md:gap-12 mb-16">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 group mb-6">
               <div className="w-10 h-10 border border-gold/40 flex items-center justify-center">
@@ -44,9 +44,23 @@ export default function Footer() {
                 </span>
               </div>
             </Link>
-            <p className="text-xs text-light/30 leading-relaxed max-w-xs">
+            <p className="text-xs text-light/30 leading-relaxed max-w-xs mb-6">
               نعيد تعريف العقارات الفاخرة بخدمة لا تُضاهى وأفخم العقارات حول العالم.
             </p>
+            <div className="space-y-3">
+              <div className="flex items-center gap-3 text-light/20">
+                <HiMail size={14} className="text-gold/40" />
+                <span className="text-[11px]">info@zovadri-estates.com</span>
+              </div>
+              <div className="flex items-center gap-3 text-light/20">
+                <HiPhone size={14} className="text-gold/40" />
+                <span className="text-[11px]">+20 100 000 0000</span>
+              </div>
+              <div className="flex items-center gap-3 text-light/20">
+                <HiLocationMarker size={14} className="text-gold/40" />
+                <span className="text-[11px]">القاهرة، مصر</span>
+              </div>
+            </div>
           </div>
 
           {Object.entries(footerLinks).map(([category, links]) => (
@@ -89,7 +103,7 @@ export default function Footer() {
           </div>
 
           <p className="text-[10px] tracking-[0.2em] text-light/20 uppercase text-center md:text-right">
-            تصميم وتطوير ZOVADRI
+            © 2026 ZOVADRI Estates. جميع الحقوق محفوظة. تصميم وتطوير ZOVADRI
           </p>
 
           <button
