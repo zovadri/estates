@@ -5,21 +5,21 @@ import { HiArrowUp } from "react-icons/hi";
 import { FiInstagram, FiLinkedin, FiTwitter, FiYoutube } from "react-icons/fi";
 
 const footerLinks = {
-  Properties: [
-    { href: "/properties", label: "All Properties" },
-    { href: "/properties/villa-miami", label: "Villa Azure" },
-    { href: "/properties/penthouse-dubai", label: "Sky Penthouse" },
-    { href: "/properties/estate-beverly", label: "Beverly Hills Estate" },
+  عقارات: [
+    { href: "/properties", label: "جميع العقارات" },
+    { href: "/properties/villa-miami", label: "فيلا أزور" },
+    { href: "/properties/penthouse-dubai", label: "بنتهاوس سكاي" },
+    { href: "/properties/estate-beverly", label: "قصر بيفرلي هيلز" },
   ],
-  Company: [
-    { href: "/about", label: "About Us" },
-    { href: "/blog", label: "Blog" },
-    { href: "/about", label: "Careers" },
+  الشركة: [
+    { href: "/about", label: "عن الشركة" },
+    { href: "/blog", label: "المقالات" },
+    { href: "/about", label: "الوظائف" },
   ],
-  Support: [
-    { href: "/about", label: "Contact" },
-    { href: "/about", label: "Privacy Policy" },
-    { href: "/about", label: "Terms of Service" },
+  الدعم: [
+    { href: "/about", label: "اتصل بنا" },
+    { href: "/about", label: "سياسة الخصوصية" },
+    { href: "/about", label: "شروط الخدمة" },
   ],
 };
 
@@ -45,8 +45,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-xs text-light/30 leading-relaxed max-w-xs">
-              Redefining luxury real estate with unparalleled service and the
-              world's most exclusive properties.
+              نعيد تعريف العقارات الفاخرة بخدمة لا تُضاهى وأفخم العقارات حول العالم.
             </p>
           </div>
 
@@ -90,13 +89,13 @@ export default function Footer() {
           </div>
 
           <p className="text-[10px] tracking-[0.2em] text-light/20 uppercase text-center md:text-right">
-            Designed &amp; Developed by ZOVADRI
+            تصميم وتطوير ZOVADRI
           </p>
 
           <button
             onClick={scrollToTop}
             className="w-10 h-10 border border-white/10 flex items-center justify-center text-light/30 hover:text-gold hover:border-gold/40 transition-all duration-300"
-            aria-label="Back to top"
+            aria-label="العودة للأعلى"
           >
             <HiArrowUp size={16} />
           </button>

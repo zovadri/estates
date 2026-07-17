@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Cairo';
+  src: url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+}
+
 @theme {
   --color-gold: #C9A84C;
   --color-gold-light: #E8D48B;
@@ -10,6 +15,7 @@
   --color-luxury: #2C2C2C;
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
+  --font-arabic: "Cairo", sans-serif;
 }
 
 * {

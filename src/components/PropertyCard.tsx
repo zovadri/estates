@@ -47,8 +47,8 @@ export default function PropertyCard({
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
 
           {featured && (
-            <div className="absolute top-4 left-4 px-4 py-2 bg-gold text-dark text-[10px] tracking-[0.2em] uppercase font-medium">
-              Featured
+            <div className="absolute top-4 right-4 px-4 py-2 bg-gold text-dark text-[10px] tracking-[0.2em] uppercase font-medium">
+              مميز
             </div>
           )}
 
@@ -62,11 +62,11 @@ export default function PropertyCard({
             <div className="flex items-center gap-6 text-light/60 text-xs tracking-wide">
               <div className="flex items-center gap-1.5">
                 <BiBed size={16} className="text-gold/60" />
-                <span>{beds} Beds</span>
+                <span>{beds} غرف</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <BiBath size={16} className="text-gold/60" />
-                <span>{baths} Baths</span>
+                <span>{baths} حمامات</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <BiExpand size={16} className="text-gold/60" />
@@ -75,7 +75,7 @@ export default function PropertyCard({
             </div>
           </div>
 
-          <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
+          <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-x-4 group-hover:translate-x-0">
             <div className="w-10 h-10 glass-dark flex items-center justify-center">
               <span className="text-gold text-lg font-serif">→</span>
             </div>

@@ -5,29 +5,29 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "The Palm Estate",
-    location: "Dubai, UAE",
+    title: "بالم إستيت",
+    location: "دبي، الإمارات",
     image:
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=85",
     year: "2025",
   },
   {
-    title: "Bel Air Residence",
-    location: "Los Angeles, CA",
+    title: "قصر بيل إير",
+    location: "لوس أنجلوس، كاليفورنيا",
     image:
       "https://images.unsplash.com/photo-1600566753086-00f18b6c5b1a?w=800&q=85",
     year: "2025",
   },
   {
-    title: "Lake Como Villa",
-    location: "Lombardy, Italy",
+    title: "فيلا كومو",
+    location: "لومبارديا، إيطاليا",
     image:
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=85",
     year: "2024",
   },
   {
-    title: "Marina Bay Penthouse",
-    location: "Singapore",
+    title: "مارينا باي بنتهاوس",
+    location: "سنغافورة",
     image:
       "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=800&q=85",
     year: "2024",
@@ -47,18 +47,18 @@ export default function LatestProjects() {
         >
           <div>
             <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-4">
-              Latest Projects
+              أحدث المشاريع
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-light leading-[1.1]">
-              Our Recent{" "}
-              <span className="gold-gradient">Developments</span>
+              مشاريعنا{" "}
+              <span className="gold-gradient">الأخيرة</span>
             </h2>
           </div>
           <Link
             href="/properties"
             className="group inline-flex items-center gap-2 text-xs tracking-[0.25em] uppercase text-light/40 hover:text-gold transition-colors duration-300"
           >
-            View All Projects
+            عرض الكل
             <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
           </Link>
         </motion.div>

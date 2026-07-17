@@ -6,20 +6,20 @@ const lifestyleItems = [
   {
     image:
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=85",
-    title: "Interior Elegance",
-    subtitle: "Spaces curated by world-renowned designers",
+    title: "أناقة التصميم الداخلي",
+    subtitle: "مساحات صممها أشهر المصممين العالميين",
   },
   {
     image:
       "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=85",
-    title: "Infinity Living",
-    subtitle: "Where architecture meets the horizon",
+    title: "حياة بلا حدود",
+    subtitle: "حيث يلتقي المعمار مع الأفق",
   },
   {
     image:
       "https://images.unsplash.com/photo-1616594039967-ae9021a400b2?w=900&q=85",
-    title: "Private Wellness",
-    subtitle: "Sanctuaries designed for body and mind",
+    title: "الرفاهية الخاصة",
+    subtitle: "ملاذات صممت للجسد والروح",
   },
 ];
 
@@ -35,11 +35,11 @@ export default function LuxuryLifestyle() {
           className="mb-16 md:mb-20"
         >
           <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-4">
-            Luxury Lifestyle
+            نمط الحياة الفاخر
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-light leading-[1.1] max-w-3xl">
-            Beyond the Property —{" "}
-            <span className="gold-gradient">A Way of Life</span>
+            أبعد من العقار —{" "}
+            <span className="gold-gradient">أسلوب حياة</span>
           </h2>
         </motion.div>
 

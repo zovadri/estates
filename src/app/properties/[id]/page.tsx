@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { HiArrowLeft, HiLocationMarker } from "react-icons/hi";
+import { HiArrowRight, HiLocationMarker } from "react-icons/hi";
 import { BiBed, BiBath, BiExpand } from "react-icons/bi";
 
 const propertyData: Record<string, any> = {
   "villa-miami": {
-    title: "Villa Azure",
-    location: "Miami Beach, Florida",
-    price: "$12,500,000",
-    beds: 6, baths: 7, area: "8,400 sqft",
+    title: "فيلا أزور",
+    location: "ميامي بيتش، فلوريدا",
+    price: "12,500,000 $",
+    beds: 6, baths: 7, area: "8,400 قدم²",
     hero: "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=1920&q=85",
     description:
-      "An architectural masterpiece overlooking the Atlantic. This six-bedroom waterfront estate features floor-to-ceiling windows, a private infinity pool, and meticulously landscaped gardens spanning over an acre.",
+      "تحفة معمارية تطل على المحيط الأطلسي. تتميز هذه الفيلا المطلة على الشاطئ بست غرف نوم ونوافذ من الأرض حتى السقف، ومسبح لا متناهٍ خاص، وحدائق مشذبة بعناية تمتد على مساحة فدان كامل.",
     features: [
-      "Private beach access",
-      "Infinity pool with ocean views",
-      "Smart home automation",
-      "Wine cellar for 1,200 bottles",
-      "Home theater seating 16",
-      "Private dock with boat lift",
+      "وصول خاص للشاطئ",
+      "مسبح لا متناهٍ مع إطلالة على المحيط",
+      "أتمتة منزلية ذكية",
+      "قبو نبيذ يسع 1,200 زجاجة",
+      "سينما منزلية تتسع لـ 16 شخصاً",
+      "رصيف خاص مع مرسى قوارب",
     ],
     gallery: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85",
@@ -27,20 +27,20 @@ const propertyData: Record<string, any> = {
     ],
   },
   "penthouse-dubai": {
-    title: "Sky Penthouse",
-    location: "Dubai Marina, UAE",
-    price: "$8,900,000",
-    beds: 4, baths: 5, area: "5,200 sqft",
+    title: "بنتهاوس سكاي",
+    location: "دبي مارينا، الإمارات",
+    price: "8,900,000 $",
+    beds: 4, baths: 5, area: "5,200 قدم²",
     hero: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=85",
     description:
-      "Perched 80 floors above Dubai Marina, this penthouse offers panoramic views of the Arabian Gulf and city skyline. Floor-to-ceiling windows, a private terrace, and finishes by world-renowned designers.",
+      "يطل هذا البنتهاوس من ارتفاع 80 طابقاً فوق دبي مارينا على الخليج العربي وأفق المدينة. نوافذ من الأرض حتى السقف، وتراس خاص، وتشطيبات من أشهر المصممين العالميين.",
     features: [
-      "Panoramic Gulf views",
-      "Private rooftop terrace",
-      "Italian marble flooring",
-      "Infinity-edge jacuzzi",
-      "Private elevator access",
-      "24/7 butler service",
+      "إطلالة بانورامية على الخليج",
+      "تراس خاص على السطح",
+      "أرضيات رخام إيطالي",
+      "جاكوزي لا متناهي",
+      "مصعد خاص",
+      "خدمة بتلر 24 ساعة",
     ],
     gallery: [
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=85",
@@ -49,20 +49,20 @@ const propertyData: Record<string, any> = {
     ],
   },
   "estate-beverly": {
-    title: "Beverly Hills Estate",
-    location: "Beverly Hills, California",
-    price: "$22,000,000",
-    beds: 8, baths: 10, area: "12,000 sqft",
+    title: "قصر بيفرلي هيلز",
+    location: "بيفرلي هيلز، كاليفورنيا",
+    price: "22,000,000 $",
+    beds: 8, baths: 10, area: "12,000 قدم²",
     hero: "https://images.unsplash.com/photo-1600566753086-00f18b6c5b1a?w=1920&q=85",
     description:
-      "A legendary Beverly Hills compound offering unparalleled privacy and luxury. Set behind private gates on two acres, this estate features a main residence, guest house, and resort-style amenities.",
+      "مجمع أسطوري في بيفرلي هيلز يوفر خصوصية وفخامة لا تُضاهى. يقع خلف بوابات خاصة على فدانين، ويضم مبنى رئيسياً وبيت ضيافة ومرافق على مستوى المنتجعات.",
     features: [
-      "Private gated entrance",
-      "Olympic-length pool",
-      "Tennis court",
-      "Spa and wellness center",
-      "Movie screening room",
-      "7-car garage",
+      "مدخل خاص ببوابة",
+      "مسبح أولمبي",
+      "ملعب تنس",
+      "سبا ومركز صحي",
+      "غرفة عرض أفلام",
+      "جراج لـ 7 سيارات",
     ],
     gallery: [
       "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=85",
@@ -71,18 +71,18 @@ const propertyData: Record<string, any> = {
     ],
   },
   "villa-santorini": {
-    title: "Santorini Retreat", location: "Santorini, Greece",
-    price: "$4,800,000", beds: 5, baths: 4, area: "3,600 sqft",
+    title: "منتجع سانتوريني", location: "سانتوريني، اليونان",
+    price: "4,800,000 $", beds: 5, baths: 4, area: "3,600 قدم²",
     hero: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1920&q=85",
     description:
-      "A stunning Cycladic retreat carved into the caldera cliffs. Each room offers breathtaking sunset views over the Aegean Sea, with private plunge pools and traditional Cycladic architecture.",
+      "منتجع سيكلادي مذهل منحوت في منحدرات كالديرا. كل غرفة تقدم إطلالات خلابة على غروب الشمس فوق بحر إيجة، مع مسابح خاصة وهندسة سيكلادية تقليدية.",
     features: [
-      "Caldera sunset views",
-      "Private plunge pool",
-      "Outdoor jacuzzi",
-      "Traditional architecture",
-      "Mediterranean garden",
-      "Staff quarters",
+      "إطلالة على كالديرا وغروب الشمس",
+      "مسبح خاص",
+      "جاكوزي خارجي",
+      "هندسة معمارية تقليدية",
+      "حديقة متوسطية",
+      "غرف للخدم",
     ],
     gallery: [
       "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=900&q=85",
@@ -91,18 +91,18 @@ const propertyData: Record<string, any> = {
     ],
   },
   "apartment-nyc": {
-    title: "Central Park Suite", location: "New York City, NY",
-    price: "$6,200,000", beds: 3, baths: 3, area: "2,800 sqft",
+    title: "سنترال بارك سويت", location: "نيويورك، الولايات المتحدة",
+    price: "6,200,000 $", beds: 3, baths: 3, area: "2,800 قدم²",
     hero: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=85",
     description:
-      "A rare pre-war penthouse overlooking Central Park. Restored to perfection with modern amenities while preserving original architectural details including crown moldings and herringbone floors.",
+      "بنتهاوس نادر من حقبة ما قبل الحرب يطل على سنترال بارك. تم ترميمه بإتقان مع وسائل راحة عصرية مع الحفاظ على التفاصيل المعمارية الأصلية.",
     features: [
-      "Central Park views",
-      "Pre-war details restored",
-      "Chef's kitchen",
-      "Private terrace",
-      "Wine storage",
-      "Full-floor layout",
+      "إطلالة على سنترال بارك",
+      "تفاصيل أصلية من حقبة ما قبل الحرب",
+      "مطبخ شيف",
+      "تراس خاص",
+      "قبو نبيذ",
+      "مخطط طابق كامل",
     ],
     gallery: [
       "https://images.unsplash.com/photo-1600566753086-00f18b6c5b1a?w=900&q=85",
@@ -111,18 +111,18 @@ const propertyData: Record<string, any> = {
     ],
   },
   "villa-tuscany": {
-    title: "Tuscan Villa", location: "Tuscany, Italy",
-    price: "$3,900,000", beds: 5, baths: 4, area: "4,800 sqft",
+    title: "فيلا توسكانا", location: "توسكانا، إيطاليا",
+    price: "3,900,000 $", beds: 5, baths: 4, area: "4,800 قدم²",
     hero: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=85",
     description:
-      "A restored 18th-century villa surrounded by rolling vineyards and olive groves. This authentic Tuscan estate offers the perfect blend of historic charm and modern luxury.",
+      "فيلا من القرن الثامن عشر تم ترميمها وتحيط بها كروم العنب وبساتين الزيتون. هذا العقار التوسكاني الأصيل يقدم مزيجاً مثالياً من السحر التاريخي والفخامة العصرية.",
     features: [
-      "Vineyard and olive grove",
-      "Private chapel",
-      "Infinity pool",
-      "Stone farmhouse kitchen",
-      "Original frescoes",
-      "Guest cottage",
+      "كروم عنب وبستان زيتون",
+      "كنيسة خاصة",
+      "مسبح لا متناهي",
+      "مطبخ ريفي حجري",
+      "لوحات جدارية أصلية",
+      "بيت ضيافة",
     ],
     gallery: [
       "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=900&q=85",
@@ -131,18 +131,18 @@ const propertyData: Record<string, any> = {
     ],
   },
   "villa-cannes": {
-    title: "Cannes Riviera Estate", location: "Cannes, France",
-    price: "$15,800,000", beds: 7, baths: 8, area: "9,200 sqft",
+    title: "كان ريفييرا إستيت", location: "كان، فرنسا",
+    price: "15,800,000 $", beds: 7, baths: 8, area: "9,200 قدم²",
     hero: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=85",
     description:
-      "A magnificent Belle Époque estate on the French Riviera with sweeping Mediterranean views, private beach access, and formal French gardens.",
+      "قصر بيل إيبوك رائع على الريفييرا الفرنسية مع إطلالات ساحرة على البحر الأبيض المتوسط، ووصول خاص للشاطئ، وحدائق فرنسية رسمية.",
     features: [
-      "Private beach access",
-      "Formal French gardens",
-      "Heated infinity pool",
-      "Tennis court",
-      "Boat mooring",
-      "Staff apartment",
+      "وصول خاص للشاطئ",
+      "حدائق فرنسية رسمية",
+      "مسبح لا متناهي مدفأ",
+      "ملعب تنس",
+      "مرسى قوارب",
+      "شقة للخدم",
     ],
     gallery: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85",
@@ -151,18 +151,18 @@ const propertyData: Record<string, any> = {
     ],
   },
   "penthouse-singapore": {
-    title: "Marina Bay Penthouse", location: "Singapore",
-    price: "$10,200,000", beds: 4, baths: 5, area: "4,600 sqft",
+    title: "مارينا باي بنتهاوس", location: "سنغافورة",
+    price: "10,200,000 $", beds: 4, baths: 5, area: "4,600 قدم²",
     hero: "https://images.unsplash.com/photo-1616594039967-ae9021a400b2?w=1920&q=85",
     description:
-      "An ultra-modern penthouse in the heart of Singapore's Marina Bay district. Floor-to-ceiling windows frame stunning skyline views in this meticulously designed smart home.",
+      "بنتهاوس فائق الحداثة في قلب منطقة مارينا باي في سنغافورة. نوافذ من الأرض حتى السقف تؤطر إطلالات خلابة على أفق المدينة في هذا المنزل الذكي المصمم بدقة.",
     features: [
-      "Marina Bay skyline views",
-      "Smart home system",
-      "Private infinity pool",
-      "Japanese garden terrace",
-      "Wine room",
-      "Private study",
+      "إطلالة على مارينا باي",
+      "نظام منزل ذكي",
+      "مسبح لا متناهي خاص",
+      "تراس حديقة يابانية",
+      "غرفة نبيذ",
+      "دراسة خاصة",
     ],
     gallery: [
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=85",
@@ -171,18 +171,18 @@ const propertyData: Record<string, any> = {
     ],
   },
   "villa-mykonos": {
-    title: "Mykonos Blue", location: "Mykonos, Greece",
-    price: "$5,600,000", beds: 5, baths: 6, area: "4,200 sqft",
+    title: "ميكونوس بلو", location: "ميكونوس، اليونان",
+    price: "5,600,000 $", beds: 5, baths: 6, area: "4,200 قدم²",
     hero: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=85",
     description:
-      "A stunning Cycladic villa perched on a hillside with panoramic Aegean Sea views. White-washed walls, blue domes, and endless Mediterranean horizons.",
+      "فيلا سيكلادية خلابة تقع على تل مع إطلالة بانورامية على بحر إيجة. جدران بيضاء وقباب زرقاء وآفاق متوسطية لا نهاية لها.",
     features: [
-      "Aegean Sea panorama",
-      "Infinity pool",
-      "Outdoor dining terrace",
-      "Private beach access",
-      "Sunset bar",
-      "Guest suites",
+      "بانوراما بحر إيجة",
+      "مسبح لا متناهي",
+      "تراس طعام خارجي",
+      "وصول خاص للشاطئ",
+      "بار غروب الشمس",
+      "أجنحة للضيوف",
     ],
     gallery: [
       "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&q=85",
@@ -204,8 +204,8 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
     return (
       <main className="bg-dark min-h-screen pt-32 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-serif text-light mb-4">Property Not Found</h1>
-          <Link href="/properties" className="text-gold hover:underline">Back to Properties</Link>
+          <h1 className="text-4xl font-serif text-light mb-4">العقار غير موجود</h1>
+          <Link href="/properties" className="text-gold hover:underline">العودة للعقارات</Link>
         </div>
       </main>
     );
@@ -219,13 +219,13 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
           style={{ backgroundImage: `url(${property.hero})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black" />
-        <div className="absolute top-24 left-6 md:left-12 z-10">
+        <div className="absolute top-24 right-6 md:right-12 z-10">
           <Link
             href="/properties"
             className="flex items-center gap-2 text-light/60 hover:text-gold text-sm transition-colors"
           >
-            <HiArrowLeft size={16} />
-            Back to Properties
+            <HiArrowRight size={16} />
+            العودة للعقارات
           </Link>
         </div>
       </div>
@@ -253,11 +253,11 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
           <div className="flex flex-wrap gap-8 mb-10 pb-10 border-b border-white/5">
             <div className="flex items-center gap-2">
               <BiBed size={20} className="text-gold/60" />
-              <span className="text-sm text-light/60">{property.beds} Bedrooms</span>
+              <span className="text-sm text-light/60">{property.beds} غرف نوم</span>
             </div>
             <div className="flex items-center gap-2">
               <BiBath size={20} className="text-gold/60" />
-              <span className="text-sm text-light/60">{property.baths} Bathrooms</span>
+              <span className="text-sm text-light/60">{property.baths} حمامات</span>
             </div>
             <div className="flex items-center gap-2">
               <BiExpand size={20} className="text-gold/60" />
@@ -271,7 +271,7 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
 
           <div>
             <h3 className="text-sm tracking-[0.2em] uppercase text-gold/60 mb-6">
-              Amenities & Features
+              المميزات والمرافق
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {property.features.map((f: string) => (
@@ -292,7 +292,7 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
           className="mb-12"
         >
           <h3 className="text-sm tracking-[0.2em] uppercase text-gold/60 mb-8">
-            Gallery
+            معرض الصور
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {property.gallery.map((img: string, i: number) => (
@@ -321,18 +321,17 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
           className="glass p-8 md:p-12 mb-24 text-center"
         >
           <h3 className="text-xl md:text-2xl font-serif text-light mb-4">
-            Interested in this property?
+            هل أنت مهتم بهذا العقار؟
           </h3>
           <p className="text-sm text-light/40 mb-8 max-w-md mx-auto">
-            Schedule a private viewing or request more information from our
-            dedicated concierge team.
+            احجز جولة خاصة أو اطلب المزيد من المعلومات من فريق الكونسيرج المخصص لدينا.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-4 bg-gold text-dark text-xs tracking-[0.25em] uppercase font-medium hover:bg-gold-dark transition-colors duration-500">
-              Schedule a Visit
+              احجز جولة
             </button>
             <button className="px-8 py-4 border border-light/20 text-light/80 text-xs tracking-[0.25em] uppercase hover:bg-light/10 transition-all duration-500">
-              Request Info
+              طلب معلومات
             </button>
           </div>
         </motion.div>

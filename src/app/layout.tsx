@@ -20,30 +20,30 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ZOVADRI Estates — Luxury Real Estate",
+  title: "ZOVADRI Estates — عقارات فاخرة",
   description:
-    "Discover exclusive villas, apartments, and premium real estate experiences crafted for modern living by ZOVADRI Estates.",
+    "اكتشف فيلات وشقق حصرية وتجارب عقارية فاخرة صممت للحياة العصرية الأنيقة.",
   keywords: [
-    "luxury real estate",
-    "premium villas",
+    "عقارات فاخرة",
+    "فيلات للبيع",
     "ZOVADRI",
-    "exclusive properties",
-    "luxury living",
-    "real estate egypt",
+    "عقارات مصر",
+    "استثمار عقاري",
+    "لوكسري",
   ],
   openGraph: {
-    title: "ZOVADRI Estates — Luxury Real Estate",
+    title: "ZOVADRI Estates — عقارات فاخرة",
     description:
-      "Discover exclusive villas, apartments, and premium real estate experiences crafted for modern living.",
+      "اكتشف فيلات وشقق حصرية وتجارب عقارية فاخرة صممت للحياة العصرية الأنيقة.",
     type: "website",
-    locale: "en_US",
+    locale: "ar_EG",
     siteName: "ZOVADRI Estates",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZOVADRI Estates — Luxury Real Estate",
+    title: "ZOVADRI Estates — عقارات فاخرة",
     description:
-      "Discover exclusive villas, apartments, and premium real estate experiences.",
+      "اكتشف فيلات وشقق حصرية وتجارب عقارية فاخرة.",
   },
   robots: {
     index: true,
@@ -58,11 +58,15 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ar"
+      dir="rtl"
       className={`${playfair.variable} ${inter.variable}`}
     >
       <head>
         <link rel="sitemap" type="application/xml" href="/estates/sitemap.xml" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -73,7 +77,7 @@ export default function RootLayout({
               url: "https://zovadri.github.io/estates",
               logo: "https://zovadri.github.io/estates/logo.png",
               description:
-                "Discover exclusive villas, apartments, and premium real estate experiences crafted for modern living.",
+                "اكتشف فيلات وشقق حصرية وتجارب عقارية فاخرة.",
               address: {
                 "@type": "PostalAddress",
                 addressCountry: "EG",

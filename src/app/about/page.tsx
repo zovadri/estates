@@ -4,31 +4,31 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const stats = [
-  { value: "20+", label: "Years Experience" },
-  { value: "500+", label: "Properties Sold" },
-  { value: "35+", label: "Global Markets" },
-  { value: "98%", label: "Client Satisfaction" },
+  { value: "20+", label: "سنوات خبرة" },
+  { value: "500+", label: "عقار مباع" },
+  { value: "35+", label: "سوق عالمي" },
+  { value: "98%", label: "رضا العملاء" },
 ];
 
 const team = [
   {
-    name: "Ziad O. V.",
-    role: "Founder & CEO",
+    name: "زياد ع. ف.",
+    role: "المؤسس والرئيس التنفيذي",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=85",
   },
   {
-    name: "Sarah Al-Rashid",
-    role: "Head of Luxury Sales",
+    name: "سارة آل راشد",
+    role: "رئيسة المبيعات الفاخرة",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=85",
   },
   {
-    name: "Marcus Chen",
-    role: "Global Portfolio Director",
+    name: "ماركوس تشين",
+    role: "مدير المحفظة العالمية",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=85",
   },
   {
-    name: "Elena Voss",
-    role: "Head of Concierge",
+    name: "إيلينا فوس",
+    role: "رئيسة خدمة الكونسيرج",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=85",
   },
 ];
@@ -44,11 +44,11 @@ export default function AboutPage() {
           className="mb-20"
         >
           <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-4">
-            About Us
+            عن الشركة
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif text-light leading-[1.1] max-w-4xl">
-            Redefining Luxury Real Estate for a{" "}
-            <span className="gold-gradient">New Era</span>
+            نعيد تعريف العقارات الفاخرة{" "}
+            <span className="gold-gradient">لعصر جديد</span>
           </h1>
         </motion.div>
 
@@ -75,18 +75,13 @@ export default function AboutPage() {
             className="flex flex-col justify-center"
           >
             <h2 className="text-2xl md:text-3xl font-serif text-light mb-6">
-              Our Story
+              قصتنا
             </h2>
             <p className="text-sm md:text-base text-light/40 leading-relaxed mb-6">
-              Founded with a vision to transform the luxury real estate landscape,
-              ZOVADRI Estates has grown into a global authority in premium
-              properties. We combine deep market intelligence with an unwavering
-              commitment to personalized service.
+              تأسست ZOVADRI Estates برؤية لإحداث تحول في مشهد العقارات الفاخرة. لقد نمت لتصبح سلطة عالمية في مجال العقارات الراقية، حيث نجمع بين ذكاء السوق العميق والتزام لا يتزعزع بالخدمة الشخصية.
             </p>
             <p className="text-sm md:text-base text-light/40 leading-relaxed">
-              Our team of seasoned professionals brings decades of combined
-              experience across the world&apos;s most exclusive markets, from the
-              French Riviera to Dubai Marina, from Beverly Hills to Santorini.
+              يجلب فريقنا من المحترفين ذوي الخبرة عقوداً من الخبرة المتراكمة عبر أرقى الأسواق في العالم، من الريفييرا الفرنسية إلى دبي مارينا، ومن بيفرلي هيلز إلى سانتوريني.
             </p>
           </motion.div>
         </div>
@@ -114,7 +109,7 @@ export default function AboutPage() {
           className="mb-24"
         >
           <h2 className="text-2xl md:text-3xl font-serif text-light mb-12 text-center">
-            Our Leadership
+            فريق القيادة
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {team.map((member, i) => (
@@ -145,13 +140,13 @@ export default function AboutPage() {
           className="text-center mb-24"
         >
           <h2 className="text-2xl md:text-3xl font-serif text-light mb-6">
-            Ready to Find Your Dream Property?
+            مستعد لتجد عقار أحلامك؟
           </h2>
           <Link
             href="/properties"
             className="inline-block px-10 py-4 border border-gold/40 text-gold text-xs tracking-[0.25em] uppercase hover:bg-gold hover:text-dark transition-all duration-500"
           >
-            Explore Properties
+            استعرض العقارات
           </Link>
         </motion.div>
       </div>

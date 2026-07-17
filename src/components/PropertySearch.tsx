@@ -4,14 +4,14 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { HiSearch } from "react-icons/hi";
 
-const cities = ["All Cities", "Miami", "Dubai", "New York", "Los Angeles", "Santorini", "Tuscany", "Paris"];
-const propertyTypes = ["All Types", "Villa", "Penthouse", "Apartment", "Estate", "Retreat"];
-const bedCounts = ["Any", "1", "2", "3", "4", "5+"];
+const cities = ["جميع المدن", "ميامي", "دبي", "نيويورك", "لوس أنجلوس", "سانتوريني", "توسكانا", "باريس"];
+const propertyTypes = ["جميع الأنواع", "فيلا", "بنتهاوس", "شقة", "قصر", "منتجع"];
+const bedCounts = ["أي", "1", "2", "3", "4", "5+"];
 
 export default function PropertySearch() {
-  const [city, setCity] = useState("All Cities");
-  const [type, setType] = useState("All Types");
-  const [beds, setBeds] = useState("Any");
+  const [city, setCity] = useState("جميع المدن");
+  const [type, setType] = useState("جميع الأنواع");
+  const [beds, setBeds] = useState("أي");
   const [priceRange, setPriceRange] = useState(25);
 
   return (
@@ -27,10 +27,10 @@ export default function PropertySearch() {
           className="text-center mb-12"
         >
           <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-4">
-            Find Your Dream Home
+            ابحث عن منزل أحلامك
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-light">
-            Advanced Property Search
+            بحث متقدم
           </h2>
         </motion.div>
 
@@ -44,7 +44,7 @@ export default function PropertySearch() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div>
               <label className="text-[10px] tracking-[0.2em] text-light/40 uppercase block mb-3">
-                City
+                المدينة
               </label>
               <select
                 value={city}
@@ -57,7 +57,7 @@ export default function PropertySearch() {
 
             <div>
               <label className="text-[10px] tracking-[0.2em] text-light/40 uppercase block mb-3">
-                Property Type
+                نوع العقار
               </label>
               <select
                 value={type}
@@ -70,7 +70,7 @@ export default function PropertySearch() {
 
             <div>
               <label className="text-[10px] tracking-[0.2em] text-light/40 uppercase block mb-3">
-                Bedrooms
+                عدد الغرف
               </label>
               <select
                 value={beds}
@@ -83,7 +83,7 @@ export default function PropertySearch() {
 
             <div>
               <label className="text-[10px] tracking-[0.2em] text-light/40 uppercase block mb-3">
-                Max Price: ${priceRange}M
+                السعر الأقصى: ${priceRange}M
               </label>
               <input
                 type="range"
@@ -104,9 +104,9 @@ export default function PropertySearch() {
             <button className="group relative px-10 py-4 bg-gold text-dark text-xs tracking-[0.25em] uppercase font-medium overflow-hidden">
               <span className="relative z-10 flex items-center gap-2">
                 <HiSearch size={16} />
-                Search Properties
+                بحث
               </span>
-              <div className="absolute inset-0 bg-gold-dark scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+              <div className="absolute inset-0 bg-gold-dark scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-right" />
             </button>
           </div>
         </motion.div>

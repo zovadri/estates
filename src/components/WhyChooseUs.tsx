@@ -6,33 +6,33 @@ import { HiShieldCheck, HiGlobe, HiSparkles, HiSupport, HiTrendingUp, HiHome } f
 const features = [
   {
     icon: HiShieldCheck,
-    title: "Trusted Excellence",
-    desc: "Over two decades of delivering unparalleled real estate solutions with integrity and transparency.",
+    title: "ثقة ممتازة",
+    desc: "أكثر من عقدين من الخبرة في تقديم حلول عقارية لا تُضاهى بالنزاهة والشفافية.",
   },
   {
     icon: HiGlobe,
-    title: "Global Portfolio",
-    desc: "An exclusive network of the world's most desirable properties across premier international markets.",
+    title: "محفظة عالمية",
+    desc: "شبكة حصرية من أفخم العقارات في أرقى الأسواق العالمية.",
   },
   {
     icon: HiSparkles,
-    title: "Concierge Service",
-    desc: "White-glove service from initial consultation to final closing and beyond.",
+    title: "خدمة كونسيرج",
+    desc: "خدمة راقية من الاستشارة الأولى حتى الإغلاق النهائي وما بعده.",
   },
   {
     icon: HiSupport,
-    title: "24/7 Dedicated Support",
-    desc: "Your personal advisor is available around the clock for any request or inquiry.",
+    title: "دعم على مدار الساعة",
+    desc: "مستشارك الشخصي متاح 24/7 لأي طلب أو استفسار.",
   },
   {
     icon: HiTrendingUp,
-    title: "Market Intelligence",
-    desc: "Data-driven insights and predictive analytics for informed investment decisions.",
+    title: "ذكاء السوق",
+    desc: "تحليلات مدعومة بالبيانات وتنبؤات دقيقة لقرارات استثمارية واعية.",
   },
   {
     icon: HiHome,
-    title: "Portfolio Curation",
-    desc: "Tailored property portfolios matching your lifestyle aspirations and investment goals.",
+    title: "تنظيم المحفظة",
+    desc: "محافظ عقارية مخصصة تناسب تطلعات نمط حياتك وأهدافك الاستثمارية.",
   },
 ];
 
@@ -50,11 +50,11 @@ export default function WhyChooseUs() {
           className="text-center mb-16 md:mb-20"
         >
           <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-4">
-            Why Choose Us
+            لماذا تختارنا
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-light leading-[1.1]">
-            The ZOVADRI{" "}
-            <span className="gold-gradient">Difference</span>
+            فرق ZOVADRI{" "}
+            <span className="gold-gradient">المميز</span>
           </h2>
         </motion.div>
 

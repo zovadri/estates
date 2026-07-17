@@ -5,52 +5,52 @@ import Link from "next/link";
 
 const posts = [
   {
-    title: "The Future of Luxury Real Estate: Trends to Watch in 2026",
+    title: "مستقبل العقارات الفاخرة: أبرز الاتجاهات في 2026",
     excerpt:
-      "From AI-powered property matching to sustainable luxury, explore the trends reshaping the high-end property market.",
+      "من التطابق العقاري بالذكاء الاصطناعي إلى الفخامة المستدامة، اكتشف الاتجاهات التي تعيد تشكيل سوق العقارات الراقية.",
     image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=85",
-    date: "June 15, 2026",
-    category: "Market Insights",
+    date: "15 يونيو 2026",
+    category: "رؤى السوق",
   },
   {
-    title: "Behind the Design: Villa Azure's Architectural Vision",
+    title: "ما وراء التصميم: الرؤية المعمارية لفيلا أزور",
     excerpt:
-      "An exclusive look at the design philosophy and architectural innovation behind one of our flagship properties.",
+      "نظرة حصرية على فلسفة التصميم والابتكار المعماري وراء أحد أبرز عقاراتنا.",
     image: "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=800&q=85",
-    date: "May 28, 2026",
-    category: "Architecture",
+    date: "28 مايو 2026",
+    category: "هندسة معمارية",
   },
   {
-    title: "Investing in Paradise: Why Santorini Property is Booming",
+    title: "الاستثمار في الجنة: لماذا تشهد سانتوريني ازدهاراً عقارياً",
     excerpt:
-      "Discover why the Greek islands have become one of the most sought-after luxury real estate markets globally.",
+      "اكتشف لماذا أصبحت الجزر اليونانية واحدة من أكثر أسواق العقارات الفاخرة طلباً عالمياً.",
     image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=85",
-    date: "May 10, 2026",
-    category: "Investment",
+    date: "10 مايو 2026",
+    category: "استثمار",
   },
   {
-    title: "The Art of Luxury Interior Curation",
+    title: "فن تنسيق التصميم الداخلي الفاخر",
     excerpt:
-      "How ZOVADRI Estates helps clients transform houses into homes with world-class interior design partnerships.",
+      "كيف تساعد ZOVADRI Estates العملاء في تحويل المنازل إلى تحف فنية من خلال شراكات التصميم العالمية.",
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=85",
-    date: "April 22, 2026",
-    category: "Design",
+    date: "22 أبريل 2026",
+    category: "تصميم",
   },
   {
-    title: "Dubai vs. Miami: Where to Invest in 2026",
+    title: "دبي ضد ميامي: أين تستثمر في 2026؟",
     excerpt:
-      "A comparative analysis of two of the world's hottest luxury real estate markets.",
+      "تحليل مقارن لاثنين من أكثر أسواق العقارات الفاخرة سخونة في العالم.",
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=85",
-    date: "April 5, 2026",
-    category: "Investment",
+    date: "5 أبريل 2026",
+    category: "استثمار",
   },
   {
-    title: "Sustainable Luxury: The Rise of Eco-Conscious Estates",
+    title: "الفخامة المستدامة: صعود العقارات الصديقة للبيئة",
     excerpt:
-      "How the world's most exclusive properties are embracing sustainability without compromising on luxury.",
+      "كيف تتبنى أفخم عقارات العالم الاستدامة دون المساس بالفخامة.",
     image: "https://images.unsplash.com/photo-1600566753086-00f18b6c5b1a?w=800&q=85",
-    date: "March 18, 2026",
-    category: "Sustainability",
+    date: "18 مارس 2026",
+    category: "استدامة",
   },
 ];
 
@@ -65,11 +65,11 @@ export default function BlogPage() {
           className="mb-16"
         >
           <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-4">
-            Insights
+            رؤى وأفكار
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif text-light leading-[1.1]">
-            ZOVADRI{" "}
-            <span className="gold-gradient">Journal</span>
+            مدونة{" "}
+            <span className="gold-gradient">ZOVADRI</span>
           </h1>
         </motion.div>
 
@@ -88,7 +88,7 @@ export default function BlogPage() {
                   className="h-[280px] bg-cover bg-center transition-transform duration-[800ms] group-hover:scale-105"
                   style={{ backgroundImage: `url(${post.image})` }}
                 />
-                <div className="absolute top-4 left-4 px-3 py-1.5 bg-dark/70 backdrop-blur-sm text-[9px] tracking-[0.2em] text-gold/80 uppercase">
+                <div className="absolute top-4 right-4 px-3 py-1.5 bg-dark/70 backdrop-blur-sm text-[9px] tracking-[0.2em] text-gold/80 uppercase">
                   {post.category}
                 </div>
               </div>

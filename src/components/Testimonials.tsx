@@ -4,24 +4,24 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    name: "Alexander V.",
-    title: "CEO, Horizon Capital",
+    name: "ألكسندر في.",
+    title: "الرئيس التنفيذي، Horizon Capital",
     quote:
-      "ZOVADRI Estates transformed our vision into reality. The attention to detail and level of service exceeded every expectation. Truly a world-class experience.",
+      "ZOVADRI Estates حولت رؤيتنا إلى واقع. الاهتمام بالتفاصيل ومستوى الخدمة تجاوز كل التوقعات. تجربة عالمية حقاً.",
     rating: 5,
   },
   {
-    name: "Sarah Al Maktoum",
-    title: "Private Investor",
+    name: "سارة آل مكتوم",
+    title: "مستثمرة خاصة",
     quote:
-      "From Dubai to Geneva, ZOVADRI found properties we never knew existed. Their global network is unmatched in the luxury real estate sector.",
+      "من دبي إلى جنيف، ZOVADRI وجدت عقارات لم نكن نعلم بوجودها. شبكتهم العالمية لا تُضاهى في قطاع العقارات الفاخرة.",
     rating: 5,
   },
   {
-    name: "Jonathan Chen",
-    title: "Founder, Quantum Ventures",
+    name: "جوناثان تشين",
+    title: "مؤسس، Quantum Ventures",
     quote:
-      "The portfolio curation was exceptional. Every recommendation aligned perfectly with our investment strategy and lifestyle preferences.",
+      "تنظيم المحفظة كان استثنائياً. كل توصية توافقت تماماً مع استراتيجيتنا الاستثمارية وتفضيلاتنا الحياتية.",
     rating: 5,
   },
 ];
@@ -40,11 +40,11 @@ export default function Testimonials() {
           className="text-center mb-16 md:mb-20"
         >
           <span className="text-[10px] md:text-xs tracking-[0.4em] text-gold/60 uppercase block mb-4">
-            Testimonials
+            آراء العملاء
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-light leading-[1.1]">
-            Voices of{" "}
-            <span className="gold-gradient">Excellence</span>
+            أصوات{" "}
+            <span className="gold-gradient">التميز</span>
           </h2>
         </motion.div>
 
@@ -58,7 +58,7 @@ export default function Testimonials() {
               transition={{ duration: 0.6, delay: i * 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="glass p-8 md:p-10 relative group hover:border-gold/20 transition-all duration-500"
             >
-              <div className="absolute top-4 right-4 text-6xl font-serif text-gold/10 select-none">
+              <div className="absolute top-4 left-4 text-6xl font-serif text-gold/10 select-none">
                 &ldquo;
               </div>
 

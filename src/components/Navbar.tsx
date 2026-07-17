@@ -6,10 +6,10 @@ import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/properties", label: "Properties" },
-  { href: "/about", label: "About" },
-  { href: "/blog", label: "Blog" },
+  { href: "/", label: "الرئيسية" },
+  { href: "/properties", label: "عقارات" },
+  { href: "/about", label: "عن الشركة" },
+  { href: "/blog", label: "المقالات" },
 ];
 
 export default function Navbar() {
@@ -57,24 +57,24 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm tracking-widest uppercase text-light/70 hover:text-gold transition-all duration-300 relative group"
+                className="text-sm text-light/70 hover:text-gold transition-all duration-300 relative group"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 right-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
             <Link
               href="/properties"
               className="px-6 py-3 border border-gold/40 text-gold text-xs tracking-[0.2em] uppercase hover:bg-gold hover:text-dark transition-all duration-500"
             >
-              Get in Touch
+              تواصل معنا
             </Link>
           </div>
 
           <button
             onClick={() => setMobileOpen(true)}
             className="lg:hidden text-light/80 hover:text-gold transition-colors"
-            aria-label="Open menu"
+            aria-label="فتح القائمة"
           >
             <HiMenu size={28} />
           </button>
@@ -91,8 +91,8 @@ export default function Navbar() {
           >
             <button
               onClick={() => setMobileOpen(false)}
-              className="absolute top-6 right-6 text-light/80 hover:text-gold transition-colors"
-              aria-label="Close menu"
+              className="absolute top-6 left-6 text-light/80 hover:text-gold transition-colors"
+              aria-label="إغلاق القائمة"
             >
               <HiX size={32} />
             </button>
@@ -125,7 +125,7 @@ export default function Navbar() {
                   onClick={() => setMobileOpen(false)}
                   className="px-8 py-4 border border-gold/40 text-gold text-sm tracking-[0.2em] uppercase hover:bg-gold hover:text-dark transition-all duration-500"
                 >
-                  Get in Touch
+                  تواصل معنا
                 </Link>
               </motion.div>
             </nav>

@@ -37,7 +37,7 @@ export default function Hero() {
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent" />
       </div>
 
       <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-20 max-w-[1440px] mx-auto">
@@ -57,9 +57,9 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif text-light leading-[0.95] max-w-4xl"
         >
-          Luxury Living
+          حياة فاخرة
           <br />
-          <span className="gold-gradient">Starts Here</span>
+          <span className="gold-gradient">تبدأ من هنا</span>
         </motion.h1>
 
         <motion.p
@@ -68,8 +68,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 1, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="mt-8 text-base md:text-lg text-light/60 max-w-xl leading-relaxed"
         >
-          Discover exclusive villas, apartments, and premium real estate experiences
-          crafted for modern living.
+          اكتشف فيلات وشقق وتجارب عقارية حصرية صممت خصيصاً لعشاق الفخامة والأناقة العصرية.
         </motion.p>
 
         <motion.div
@@ -82,14 +81,14 @@ export default function Hero() {
             href="/properties"
             className="group relative px-8 py-4 bg-gold text-dark text-xs tracking-[0.25em] uppercase font-medium overflow-hidden"
           >
-            <span className="relative z-10">Explore Properties</span>
-            <div className="absolute inset-0 bg-gold-dark scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+            <span className="relative z-10">استعرض العقارات</span>
+            <div className="absolute inset-0 bg-gold-dark scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-right" />
           </Link>
           <Link
             href="/about"
             className="px-8 py-4 border border-light/20 text-light/80 text-xs tracking-[0.25em] uppercase hover:bg-light/10 hover:border-light/40 transition-all duration-500"
           >
-            Book a Private Tour
+            احجز جولة خاصة
           </Link>
         </motion.div>
       </div>
@@ -101,7 +100,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
       >
         <span className="text-[8px] tracking-[0.3em] text-light/30 uppercase">
-          Scroll
+          للأسفل
         </span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
