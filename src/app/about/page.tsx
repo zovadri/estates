@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const stats = [
-  { value: "20+", label: "سنوات خبرة" },
-  { value: "500+", label: "عقار مباع" },
+  { value: "25+", label: "خبير عقاري" },
+  { value: "500+", label: "عميل سعيد" },
   { value: "35+", label: "سوق عالمي" },
   { value: "98%", label: "رضا العملاء" },
 ];
