@@ -218,7 +218,7 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
           style={{ backgroundImage: `url(${property.hero})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black" />
-        <div className="absolute top-24 right-6 md:right-12 z-10">
+          <div className="absolute top-20 md:top-24 right-6 md:right-12 z-10">
           <Link
             href="/properties"
             className="flex items-center gap-2 text-light/60 hover:text-gold text-sm transition-colors"
@@ -233,7 +233,7 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
         <div className="glass p-8 md:p-12 mb-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
             <div>
-              <h1 className="text-3xl md:text-5xl font-serif text-light mb-3">
+              <h1 className="text-2xl md:text-4xl font-serif text-light mb-3">
                 {property.title}
               </h1>
               <div className="flex items-center gap-1.5 text-light/50">
