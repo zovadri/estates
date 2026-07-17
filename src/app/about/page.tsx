@@ -11,26 +11,10 @@ const stats = [
 ];
 
 const team = [
-  {
-    name: "زياد ع. ف.",
-    role: "المؤسس والرئيس التنفيذي",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=85",
-  },
-  {
-    name: "سارة آل راشد",
-    role: "رئيسة المبيعات الفاخرة",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=85",
-  },
-  {
-    name: "ماركوس تشين",
-    role: "مدير المحفظة العالمية",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=85",
-  },
-  {
-    name: "إيلينا فوس",
-    role: "رئيسة خدمة الكونسيرج",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=85",
-  },
+  { role: "المؤسس والرئيس التنفيذي" },
+  { role: "رئيس قسم العقارات الفاخرة" },
+  { role: "مدير المحفظة العالمية" },
+  { role: "رئيس خدمة الكونسيرج" },
 ];
 
 export default function AboutPage() {
@@ -114,19 +98,17 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {team.map((member, i) => (
               <motion.div
-                key={member.name}
+                key={member.role}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 className="text-center group"
               >
-                <div
-                  className="w-full aspect-[3/4] bg-cover bg-center mb-4 grayscale group-hover:grayscale-0 transition-all duration-700"
-                  style={{ backgroundImage: `url(${member.image})` }}
+                <div className="w-full aspect-[3/4] bg-cover bg-center mb-4 grayscale"
+                  style={{ backgroundImage: "url(https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=85&blur=80)" }}
                 />
-                <h3 className="text-sm font-serif text-light">{member.name}</h3>
-                <p className="text-xs text-light/30 mt-1">{member.role}</p>
+                <p className="text-sm font-serif text-light">{member.role}</p>
               </motion.div>
             ))}
           </div>
