@@ -7,7 +7,7 @@ const allProperties = [
   {
     id: "villa-miami", title: "فيلا أزور", location: "ميامي بيتش، فلوريدا",
     price: "12,500,000 $", beds: 6, baths: 7, area: "8,400 قدم²",
-    image: "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=800&q=85", featured: true,
+    image: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=800&q=85", featured: true,
   },
   {
     id: "penthouse-dubai", title: "بنتهاوس سكاي", location: "دبي مارينا، الإمارات",
@@ -17,7 +17,7 @@ const allProperties = [
   {
     id: "estate-beverly", title: "قصر بيفرلي هيلز", location: "بيفرلي هيلز، كاليفورنيا",
     price: "22,000,000 $", beds: 8, baths: 10, area: "12,000 قدم²",
-    image: "https://images.unsplash.com/photo-1600566753086-00f18b6c5b1a?w=800&q=85", featured: true,
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=85", featured: true,
   },
   {
     id: "villa-santorini", title: "منتجع سانتوريني", location: "سانتوريني، اليونان",
@@ -42,7 +42,7 @@ const allProperties = [
   {
     id: "penthouse-singapore", title: "مارينا باي بنتهاوس", location: "سنغافورة",
     price: "10,200,000 $", beds: 4, baths: 5, area: "4,600 قدم²",
-    image: "https://images.unsplash.com/photo-1616594039967-ae9021a400b2?w=800&q=85", featured: false,
+    image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=85", featured: false,
   },
   {
     id: "villa-mykonos", title: "ميكونوس بلو", location: "ميكونوس، اليونان",

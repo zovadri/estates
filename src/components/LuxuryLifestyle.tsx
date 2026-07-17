@@ -17,7 +17,7 @@ const lifestyleItems = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1616594039967-ae9021a400b2?w=900&q=85",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&q=85",
     title: "الرفاهية الخاصة",
     subtitle: "ملاذات صممت للجسد والروح",
   },

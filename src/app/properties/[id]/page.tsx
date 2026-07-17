@@ -8,7 +8,7 @@ const propertyData: Record<string, any> = {
     location: "ميامي بيتش، فلوريدا",
     price: "12,500,000 $",
     beds: 6, baths: 7, area: "8,400 قدم²",
-    hero: "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=1920&q=85",
+    hero: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=1920&q=85",
     description:
       "تحفة معمارية تطل على المحيط الأطلسي. تتميز هذه الفيلا المطلة على الشاطئ بست غرف نوم ونوافذ من الأرض حتى السقف، ومسبح لا متناهٍ خاص، وحدائق مشذبة بعناية تمتد على مساحة فدان كامل.",
     features: [
@@ -22,7 +22,7 @@ const propertyData: Record<string, any> = {
     gallery: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=85",
-      "https://images.unsplash.com/photo-1600566753086-00f18b6c5b1a?w=900&q=85",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&q=85",
     ],
   },
   "penthouse-dubai": {
@@ -43,7 +43,7 @@ const propertyData: Record<string, any> = {
     ],
     gallery: [
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=85",
-      "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=900&q=85",
+      "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=900&q=85",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=85",
     ],
   },
@@ -52,7 +52,7 @@ const propertyData: Record<string, any> = {
     location: "بيفرلي هيلز، كاليفورنيا",
     price: "22,000,000 $",
     beds: 8, baths: 10, area: "12,000 قدم²",
-    hero: "https://images.unsplash.com/photo-1600566753086-00f18b6c5b1a?w=1920&q=85",
+    hero: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=85",
     description:
       "مجمع أسطوري في بيفرلي هيلز يوفر خصوصية وفخامة لا تُضاهى. يقع خلف بوابات خاصة على فدانين، ويضم مبنى رئيسياً وبيت ضيافة ومرافق على مستوى المنتجعات.",
     features: [
@@ -65,7 +65,7 @@ const propertyData: Record<string, any> = {
     ],
     gallery: [
       "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=85",
-      "https://images.unsplash.com/photo-1616594039967-ae9021a400b2?w=900&q=85",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&q=85",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=85",
     ],
   },
@@ -84,7 +84,7 @@ const propertyData: Record<string, any> = {
       "غرف للخدم",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=900&q=85",
+      "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=900&q=85",
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=85",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85",
     ],
@@ -104,9 +104,9 @@ const propertyData: Record<string, any> = {
       "مخطط طابق كامل",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1600566753086-00f18b6c5b1a?w=900&q=85",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&q=85",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=85",
-      "https://images.unsplash.com/photo-1616594039967-ae9021a400b2?w=900&q=85",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&q=85",
     ],
   },
   "villa-tuscany": {
@@ -124,7 +124,7 @@ const propertyData: Record<string, any> = {
       "بيت ضيافة",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=900&q=85",
+      "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=900&q=85",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85",
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=85",
     ],
@@ -145,14 +145,14 @@ const propertyData: Record<string, any> = {
     ],
     gallery: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85",
-      "https://images.unsplash.com/photo-1600566753086-00f18b6c5b1a?w=900&q=85",
-      "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=900&q=85",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&q=85",
+      "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=900&q=85",
     ],
   },
   "penthouse-singapore": {
     title: "مارينا باي بنتهاوس", location: "سنغافورة",
     price: "10,200,000 $", beds: 4, baths: 5, area: "4,600 قدم²",
-    hero: "https://images.unsplash.com/photo-1616594039967-ae9021a400b2?w=1920&q=85",
+    hero: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1920&q=85",
     description:
       "بنتهاوس فائق الحداثة في قلب منطقة مارينا باي في سنغافورة. نوافذ من الأرض حتى السقف تؤطر إطلالات خلابة على أفق المدينة في هذا المنزل الذكي المصمم بدقة.",
     features: [
@@ -186,7 +186,7 @@ const propertyData: Record<string, any> = {
     gallery: [
       "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&q=85",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85",
-      "https://images.unsplash.com/photo-1616594039967-ae9021a400b2?w=900&q=85",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&q=85",
     ],
   },
 };

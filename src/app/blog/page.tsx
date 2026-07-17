@@ -16,7 +16,7 @@ const posts = [
     title: "ما وراء التصميم: الرؤية المعمارية لفيلا أزور",
     excerpt:
       "نظرة حصرية على فلسفة التصميم والابتكار المعماري وراء أحد أبرز عقاراتنا.",
-    image: "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=800&q=85",
+    image: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=800&q=85",
     date: "28 مايو 2026",
     category: "هندسة معمارية",
   },
@@ -48,7 +48,7 @@ const posts = [
     title: "الفخامة المستدامة: صعود العقارات الصديقة للبيئة",
     excerpt:
       "كيف تتبنى أفخم عقارات العالم الاستدامة دون المساس بالفخامة.",
-    image: "https://images.unsplash.com/photo-1600566753086-00f18b6c5b1a?w=800&q=85",
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=85",
     date: "18 مارس 2026",
     category: "استدامة",
   },

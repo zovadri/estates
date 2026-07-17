@@ -12,7 +12,7 @@ const properties = [
     baths: 7,
     area: "8,400 قدم²",
     image:
-      "https://images.unsplash.com/photo-1613490493576-7fde19bc66a7?w=800&q=85",
+      "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=800&q=85",
     featured: true,
   },
   {
@@ -36,7 +36,7 @@ const properties = [
     baths: 10,
     area: "12,000 قدم²",
     image:
-      "https://images.unsplash.com/photo-1600566753086-00f18b6c5b1a?w=800&q=85",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=85",
     featured: true,
   },
   {
