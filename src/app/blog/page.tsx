@@ -56,8 +56,9 @@ const posts = [
 
 export default function BlogPage() {
   return (
-      <section className="bg-dark min-h-screen pt-32 md:pt-36">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+      <section className="bg-dark min-h-screen">
+        <div className="h-20 md:h-24" />
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 pt-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
