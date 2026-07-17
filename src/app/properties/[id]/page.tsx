@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { HiArrowRight, HiLocationMarker } from "react-icons/hi";
 import { BiBed, BiBath, BiExpand } from "react-icons/bi";
@@ -196,8 +195,8 @@ export function generateStaticParams() {
   return Object.keys(propertyData).map((id) => ({ id }));
 }
 
-export default function PropertyDetailPage({ params }: { params: { id: string } }) {
-  const id = params.id;
+export default async function PropertyDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   const property = propertyData[id];
 
   if (!property) {
@@ -231,12 +230,7 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
       </div>
 
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 -mt-20 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="glass p-8 md:p-12 mb-12"
-        >
+        <div className="glass p-8 md:p-12 mb-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
             <div>
               <h1 className="text-3xl md:text-5xl font-serif text-light mb-3">
@@ -282,43 +276,25 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
               ))}
             </div>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-12"
-        >
+        <div className="mb-12">
           <h3 className="text-sm tracking-[0.2em] uppercase text-gold/60 mb-8">
             معرض الصور
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {property.gallery.map((img: string, i: number) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="overflow-hidden"
-              >
+              <div key={i} className="overflow-hidden">
                 <div
                   className="h-[300px] bg-cover bg-center hover:scale-105 transition-transform duration-700"
                   style={{ backgroundImage: `url(${img})` }}
                 />
-              </motion.div>
+              </div>
             ))}
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="glass p-8 md:p-12 mb-24 text-center"
+        <div className="glass p-8 md:p-12 mb-24 text-center"
         >
           <h3 className="text-xl md:text-2xl font-serif text-light mb-4">
             هل أنت مهتم بهذا العقار؟
@@ -334,7 +310,7 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
               طلب معلومات
             </button>
           </div>
-        </motion.div>
+        </div>
       </div>
     </main>
   );
